@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30332B3F-186C-4F75-8962-85E86E13C6E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cobilas.IO.Alf.Alfbt</RootNamespace>
+    <AssemblyName>Cobilas.IO.Alf.Alfbt</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cobilas.Collections, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\..\packages\Cobilas.Collections.1.2.0\lib\net35\Cobilas.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Cobilas.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cobilas.Core.net35.1.0.0\lib\net35\Cobilas.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cobilas.IO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cobilas.IO.1.0.0\lib\net35\Cobilas.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ALFBTException.cs" />
+    <Compile Include="ALFBTMemoryStreamRead.cs" />
+    <Compile Include="ALFBTMemoryStreamWriter.cs" />
+    <Compile Include="ALFBTRead.cs" />
+    <Compile Include="ALFBTWriter.cs" />
+    <Compile Include="Components\ALFBTUtility.cs" />
+    <Compile Include="Components\ALFBTVersionEnum.cs" />
+    <Compile Include="Components\Collections\ALFBTFlagReadOnly.cs" />
+    <Compile Include="Components\Collections\ALFBTFlagReadOnlyEnumerator.cs" />
+    <Compile Include="Components\Enums.cs" />
+    <Compile Include="Flags\CommentFlag.cs" />
+    <Compile Include="Flags\FlagBase.cs" />
+    <Compile Include="Flags\HeaderFlag.cs" />
+    <Compile Include="Flags\MarkingFlag.cs" />
+    <Compile Include="Flags\TextFlag.cs" />
+    <Compile Include="Language\LanguageCollection.cs" />
+    <Compile Include="Language\LanguageCollectionToIEnumerator.cs" />
+    <Compile Include="Language\LanguageManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ALFBTArk\ALFBT format%281.0%29.txt" />
+    <Content Include="ALFBTArk\ALFBT format%281.5%29.txt" />
+    <Content Include="ALFBTArk\formatos antigos\ALFBTArk1_0.txt" />
+    <Content Include="ALFBTArk\formatos antigos\ALFBTArk1_2.txt" />
+    <Content Include="ALFBTArk\formatos antigos\ALFBTArk1_7_2.txt" />
+    <Content Include="Alf\ALF format\ALF format%281.0%29.txt" />
+    <Content Include="Language\Format\ALFBTLangCollection.txt" />
+    <Content Include="Language\Format\ALFBTLangManifestFormat.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

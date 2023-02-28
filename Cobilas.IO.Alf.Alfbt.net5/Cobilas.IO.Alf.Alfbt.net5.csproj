@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Cobilas.IO.Alf.Alfbt</RootNamespace>
+    <AssemblyName>Cobilas.IO.Alf.Alfbt</AssemblyName>
+    <Authors>Cobilas</Authors>
+    <Description>Cobilas translation bank</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://www.nuget.org/packages/Cobilas.IO.Alf.Alfbt/</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>2.0.0</Version>
+    <PackageReleaseNotes>Updated for NET 5</PackageReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\ALFBTException.cs" Link="ALFBTException.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\ALFBTMemoryStreamRead.cs" Link="ALFBTMemoryStreamRead.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\ALFBTMemoryStreamWriter.cs" Link="ALFBTMemoryStreamWriter.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\ALFBTRead.cs" Link="ALFBTRead.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\ALFBTWriter.cs" Link="ALFBTWriter.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Components\ALFBTUtility.cs" Link="Components\ALFBTUtility.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Components\ALFBTVersionEnum.cs" Link="Components\ALFBTVersionEnum.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Components\Collections\ALFBTFlagReadOnly.cs" Link="Components\Collections\ALFBTFlagReadOnly.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Components\Collections\ALFBTFlagReadOnlyEnumerator.cs" Link="Components\Collections\ALFBTFlagReadOnlyEnumerator.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Components\Enums.cs" Link="Components\Enums.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Flags\CommentFlag.cs" Link="Flags\CommentFlag.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Flags\FlagBase.cs" Link="Flags\FlagBase.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Flags\HeaderFlag.cs" Link="Flags\HeaderFlag.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Flags\MarkingFlag.cs" Link="Flags\MarkingFlag.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Flags\TextFlag.cs" Link="Flags\TextFlag.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Language\LanguageCollection.cs" Link="Language\LanguageCollection.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Language\LanguageCollectionToIEnumerator.cs" Link="Language\LanguageCollectionToIEnumerator.cs" />
+    <Compile Include="..\Cobilas.IO.Alf.Alfbt.net35\Language\LanguageManager.cs" Link="Language\LanguageManager.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Flags\" />
+  <Folder Include="Components\Collections\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cobilas.IO" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>

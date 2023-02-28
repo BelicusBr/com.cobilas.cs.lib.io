@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Cobilas.IO</RootNamespace>
+    <AssemblyName>Cobilas.IO</AssemblyName>
+    <Version>2.0.0</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>Cobilas</Authors>
+    <PackageTags>CSharp</PackageTags>
+    <PackageReleaseNotes>Updated for NET 5</PackageReleaseNotes>
+    <PackageProjectUrl>https://www.nuget.org/packages/Cobilas.IO/</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Cobilas INPut OUTPut</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Cobilas.IO.net35\Alf\ALFException.cs" Link="Alf\ALFException.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\ALFMemoryStreamRead.cs" Link="Alf\ALFMemoryStreamRead.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\ALFMemoryStreamWriter.cs" Link="Alf\ALFMemoryStreamWriter.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\ALFRead.cs" Link="Alf\ALFRead.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\ALFWriter.cs" Link="Alf\ALFWriter.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\Components\ALFItem.cs" Link="Alf\Components\ALFItem.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\Components\ALFMemoryReadSettings.cs" Link="Alf\Components\ALFMemoryReadSettings.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\Components\ALFMemoryWriterSetting.cs" Link="Alf\Components\ALFMemoryWriterSetting.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\Components\ALFNodeType.cs" Link="Alf\Components\ALFNodeType.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\Components\ALFReadSettings.cs" Link="Alf\Components\ALFReadSettings.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\Components\ALFSettings.cs" Link="Alf\Components\ALFSettings.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\Components\ALFUtility.cs" Link="Alf\Components\ALFUtility.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\Components\ALFWriterSettings.cs" Link="Alf\Components\ALFWriterSettings.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\Components\CharacterCursor.cs" Link="Alf\Components\CharacterCursor.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\Components\Collections\ALFItemReadOnly.cs" Link="Alf\Components\Collections\ALFItemReadOnly.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\Components\Collections\IItemReadOnly.cs" Link="Alf\Components\Collections\IItemReadOnly.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Alf\Components\Collections\ItemReadOnlyEnumerator.cs" Link="Alf\Components\Collections\ItemReadOnlyEnumerator.cs" />
+    <Compile Include="..\Cobilas.IO.net35\Serialization\Binary\ScratchObject.cs" Link="Serialization\Binary\ScratchObject.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Alf\Components\Collections\" />
+    <Folder Include="Serialization\Binary\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cobilas.Core" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>
