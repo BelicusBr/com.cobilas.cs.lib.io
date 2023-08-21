@@ -34,11 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Flags\" />
-  <Folder Include="Components\Collections\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Cobilas.IO" Version="2.0.0" />
   </ItemGroup>
 
