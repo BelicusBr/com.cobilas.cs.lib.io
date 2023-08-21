@@ -32,13 +32,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cobilas.Collections, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\..\..\packages\Cobilas.Collections.1.2.0\lib\net35\Cobilas.Collections.dll</HintPath>
+      <HintPath>..\packages\Cobilas.Collections.1.2.0\lib\net35\Cobilas.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Cobilas.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cobilas.Core.net35.1.0.0\lib\net35\Cobilas.Core.dll</HintPath>
+      <HintPath>..\packages\Cobilas.Core.1.0.0\lib\net35\Cobilas.Core.dll</HintPath>
     </Reference>
     <Reference Include="Cobilas.IO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cobilas.IO.1.0.0\lib\net35\Cobilas.IO.dll</HintPath>
+      <HintPath>..\packages\Cobilas.IO.1.1.1\lib\net35\Cobilas.IO.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

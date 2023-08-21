@@ -32,10 +32,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cobilas.Collections, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\..\..\packages\Cobilas.Collections.1.2.0\lib\net35\Cobilas.Collections.dll</HintPath>
+      <HintPath>..\packages\Cobilas.Collections.1.2.0\lib\net35\Cobilas.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Cobilas.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cobilas.Core.net35.1.0.0\lib\net35\Cobilas.Core.dll</HintPath>
+      <HintPath>..\packages\Cobilas.Core.1.0.0\lib\net35\Cobilas.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -66,10 +66,10 @@
     <Compile Include="Serialization\Binary\ScratchObject.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Content Include="Alf\ALF format\ALF format%281.0%29.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Alf\ALF format\ALF format%281.0%29.txt" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
