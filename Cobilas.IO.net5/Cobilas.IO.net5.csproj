@@ -36,11 +36,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Alf\Components\Collections\" />
-    <Folder Include="Serialization\Binary\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Cobilas.Core" Version="3.0.0" />
   </ItemGroup>
 
