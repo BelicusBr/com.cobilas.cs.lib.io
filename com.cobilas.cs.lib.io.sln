@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cobilas.IO.Alf.Alfbt.net35"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cobilas.IO.net35", "Cobilas.IO.net35\Cobilas.IO.net35.csproj", "{D535D21A-ADFA-4EA5-A7FC-0C926BB9645E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cobilas.IO.Alf.Alfbt.net5", "Cobilas.IO.Alf.Alfbt.net5\Cobilas.IO.Alf.Alfbt.net5.csproj", "{9450B2B3-DB5C-4F7E-AF05-EE3B821B51E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cobilas.IO.Alf.Alfbt.net5", "Cobilas.IO.Alf.Alfbt.net5\Cobilas.IO.Alf.Alfbt.net5.csproj", "{9450B2B3-DB5C-4F7E-AF05-EE3B821B51E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cobilas.IO.net5", "Cobilas.IO.net5\Cobilas.IO.net5.csproj", "{C1231D8D-C26B-41F1-9D98-4D5C31908CB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cobilas.IO.net5", "Cobilas.IO.net5\Cobilas.IO.net5.csproj", "{C1231D8D-C26B-41F1-9D98-4D5C31908CB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
