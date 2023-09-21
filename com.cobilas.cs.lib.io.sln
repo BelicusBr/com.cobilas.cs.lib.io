@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cobilas.IO.Alf.Alfbt.net5",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cobilas.IO.net5", "Cobilas.IO.net5\Cobilas.IO.net5.csproj", "{C1231D8D-C26B-41F1-9D98-4D5C31908CB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.cobilas.cs.lib.io.test", "com.cobilas.cs.lib.io.test\com.cobilas.cs.lib.io.test.csproj", "{17720FF0-AC25-41F5-AE87-0200004A4514}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C1231D8D-C26B-41F1-9D98-4D5C31908CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1231D8D-C26B-41F1-9D98-4D5C31908CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1231D8D-C26B-41F1-9D98-4D5C31908CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17720FF0-AC25-41F5-AE87-0200004A4514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17720FF0-AC25-41F5-AE87-0200004A4514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17720FF0-AC25-41F5-AE87-0200004A4514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17720FF0-AC25-41F5-AE87-0200004A4514}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
