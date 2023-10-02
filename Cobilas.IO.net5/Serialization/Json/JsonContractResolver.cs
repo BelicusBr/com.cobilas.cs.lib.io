@@ -7,10 +7,25 @@ using Newtonsoft.Json.Serialization;
 namespace Cobilas.IO.Serialization.Json {
     public class JsonContractResolver : DefaultContractResolver {
         protected override IList<JsonProperty> CreateProperties(Type type, MemberSerialization memberSerialization) {
+            List<JsonProperty> props = new();
             if (type.GetCustomAttribute<SerializableAttribute>() is null)
-                throw new JsonSerializationException($"The {type} class does not have the Serializable attribute");
-            List<JsonProperty> props = new List<JsonProperty>();
-            foreach (var item in type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance)) {
+                return props;
+
+            List<FieldInfo> fields = new();
+            Type temp = type;
+            while (temp != null) {
+
+                FieldInfo[] infos = temp.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+
+                if (infos != null)
+                    foreach (FieldInfo item in infos)
+                        if (item.DeclaringType == temp && !item.IsBackingField())
+                            fields.Add(item);
+
+                temp = temp.BaseType;
+            }
+
+            foreach (FieldInfo item in fields) {
                 if (item.GetCustomAttribute<NonSerializedAttribute>() == null)
                     props.Add(base.CreateProperty(item, memberSerialization));
             }

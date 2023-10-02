@@ -4,15 +4,15 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Cobilas.IO</RootNamespace>
     <AssemblyName>Cobilas.IO</AssemblyName>
-    <Version>2.1.0</Version>
+    <Version>2.2.0</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Authors>Cobilas</Authors>
     <PackageTags>CSharp</PackageTags>
-    <PackageReleaseNotes>Add Json serialization</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
     <PackageProjectUrl>https://www.nuget.org/packages/Cobilas.IO/</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Cobilas INPut OUTPut</Description>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
@@ -37,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cobilas.Core" Version="3.0.0" />
+    <PackageReference Include="Cobilas.Core" Version="3.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
