@@ -1,75 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D535D21A-ADFA-4EA5-A7FC-0C926BB9645E}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Cobilas.IO</RootNamespace>
     <AssemblyName>Cobilas.IO</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
+    <Version>2.2.1</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>Cobilas</Authors>
+    <PackageTags>CSharp</PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageProjectUrl>https://www.nuget.org/packages/Cobilas.IO/</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Cobilas INPut OUTPut</Description>
+    <NeutralLanguage>en</NeutralLanguage>
+    <RepositoryUrl>https://github.com/BelicusBr/com.cobilas.cs.lib.io</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="Cobilas.Collections, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cobilas.Collections.1.2.0\lib\net35\Cobilas.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="Cobilas.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cobilas.Core.1.0.0\lib\net35\Cobilas.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="Cobilas.Core" Version="3.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Alf\ALFException.cs" />
-    <Compile Include="Alf\ALFMemoryStreamRead.cs" />
-    <Compile Include="Alf\ALFMemoryStreamWriter.cs" />
-    <Compile Include="Alf\ALFRead.cs" />
-    <Compile Include="Alf\ALFWriter.cs" />
-    <Compile Include="Alf\Components\ALFItem.cs" />
-    <Compile Include="Alf\Components\ALFMemoryReadSettings.cs" />
-    <Compile Include="Alf\Components\ALFMemoryWriterSetting.cs" />
-    <Compile Include="Alf\Components\ALFNodeType.cs" />
-    <Compile Include="Alf\Components\ALFReadSettings.cs" />
-    <Compile Include="Alf\Components\ALFSettings.cs" />
-    <Compile Include="Alf\Components\ALFUtility.cs" />
-    <Compile Include="Alf\Components\ALFWriterSettings.cs" />
-    <Compile Include="Alf\Components\CharacterCursor.cs" />
-    <Compile Include="Alf\Components\Collections\ALFItemReadOnly.cs" />
-    <Compile Include="Alf\Components\Collections\IItemReadOnly.cs" />
-    <Compile Include="Alf\Components\Collections\ItemReadOnlyEnumerator.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Serialization\Binary\ScratchObject.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Alf\ALF format\ALF format%281.0%29.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>
