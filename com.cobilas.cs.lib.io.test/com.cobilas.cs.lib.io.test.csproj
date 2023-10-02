@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cobilas.IO.net5\Cobilas.IO.net5.csproj" />
+    <ProjectReference Include="..\Cobilas.IO\Cobilas.IO.csproj" />
   </ItemGroup>
 
 </Project>
